@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Diário do Humor</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>Diário do Humor</h1>
+<div id="welcome"></div>
+
+<div id="userNameInput">
+  <label>Digite seu nome:</label><br />
+  <input type="text" id="nameInput" placeholder="Seu nome aqui" />
+  <button id="btnName">Confirmar</button>
+</div>
+
+<div id="diary" style="display:none;">
+  <p><strong>Como você está hoje?</strong></p>
+  <div class="emoji-picker">
+    <button data-emoji=":D" title="Feliz">:D</button>
+    <button data-emoji=":|" title="Neutro">:|</button>
+    <button data-emoji=":(" title="Triste">:(</button>
+    <button data-emoji=":@" title="Bravo">:@</button>
+    <button data-emoji="ZzZ" title="Cansado">ZzZ</button>
+  </div>
+  <input type="text" id="reasonInput" placeholder="Motivo..." />
+  <button id="saveBtn" disabled>Salvar humor do dia</button>
+
+  <section>
+    <h2>Histórico da Semana:</h2>
+    <div id="history"></div>
+  </section>
+
+  <section>
+    <h2>Humor da semana:</h2>
+    <div id="summary"></div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
